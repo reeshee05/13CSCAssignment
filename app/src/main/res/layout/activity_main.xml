@@ -58,6 +58,7 @@
         android:layout_marginEnd="35dp"
         android:layout_marginBottom="35dp"
         android:hint="example@gmail.com"
+        android:inputType="textEmailAddress"
         android:padding="20dp"
         android:textColor="@color/white"
         android:textColorHint="@color/white" />
@@ -100,7 +101,7 @@
         android:layout_below="@id/password"
         android:layout_centerHorizontal="true"
         android:layout_marginStart="1dp"
-        android:layout_marginTop="1dp"
+        android:layout_marginTop="60dp"
         android:layout_marginEnd="1dp"
         android:layout_marginBottom="1dp"
         android:backgroundTint="@color/teal_200"
@@ -112,7 +113,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/password_title"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="155dp"
+        android:layout_marginTop="235dp"
         android:layout_marginEnd="30dp"
         android:layout_marginBottom="30dp"
         android:gravity="left"
@@ -125,7 +126,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/password_title"
         android:layout_marginStart="260dp"
-        android:layout_marginTop="155dp"
+        android:layout_marginTop="235dp"
         android:layout_marginEnd="30dp"
         android:layout_marginBottom="30dp"
         android:gravity="left"
@@ -135,7 +136,7 @@
         android:textStyle="bold" />
 
     <ProgressBar
-        android:id="@+id/progessBar"
+        android:id="@+id/progressBar"
         style="?android:attr/progressBarStyleLarge"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
