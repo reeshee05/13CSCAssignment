@@ -12,17 +12,17 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="35dp"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="100dp"
         android:layout_marginEnd="30dp"
         android:layout_marginBottom="50dp"
         android:gravity="left"
-        android:text="Sign In"
+        android:text="Sign Up"
         android:textColor="@color/white"
         android:textSize="30dp"
         android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/greeting"
+        android:id="@+id/name_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="35dp"
@@ -30,16 +30,32 @@
         android:layout_marginEnd="30dp"
         android:layout_marginBottom="50dp"
         android:gravity="left"
-        android:text="Hi there! Nice to see you."
+        android:text="Name"
+        android:textColor="@color/teal_200"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/user_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/signin"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="35dp"
+        android:hint="Full name"
+        android:padding="20dp"
         android:textColor="@color/white"
-        android:textSize="20dp" />
+        android:textColorHint="@color/white" />
 
     <TextView
         android:id="@+id/email_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@id/user_name"
         android:layout_marginStart="35dp"
-        android:layout_marginTop="250dp"
+        android:layout_marginTop="15dp"
         android:layout_marginEnd="30dp"
         android:layout_marginBottom="50dp"
         android:gravity="left"
@@ -52,12 +68,12 @@
         android:id="@+id/email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/signin"
+        android:layout_below="@id/user_name"
         android:layout_marginStart="15dp"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="30dp"
         android:layout_marginEnd="35dp"
         android:layout_marginBottom="35dp"
-        android:hint="example@gmail.com"
+        android:hint="Your email address"
         android:padding="20dp"
         android:textColor="@color/white"
         android:textColorHint="@color/white" />
@@ -88,10 +104,10 @@
         android:layout_marginBottom="35dp"
         android:drawableRight="@drawable/ic_baseline_remove_red_eye_24"
         android:hint="● ● ● ● ● ●"
+        android:inputType="textPassword"
         android:padding="20dp"
         android:textColor="@color/white"
-        android:textColorHint="@color/white"
-        android:inputType="textPassword"/>
+        android:textColorHint="@color/white" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/signinbtn"
@@ -104,45 +120,7 @@
         android:layout_marginEnd="1dp"
         android:layout_marginBottom="1dp"
         android:backgroundTint="@color/teal_200"
-        android:text="Sign In" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/others"
-        android:layout_below="@id/signinbtn"
-        android:text="or use one of your social profiles"
-        android:textColor="@color/white"
-        android:layout_centerHorizontal="true"
-        android:layout_margin="20dp"/>
-
-    <TextView
-        android:id="@+id/forgotpass"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/socialicons"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginBottom="30dp"
-        android:gravity="left"
-        android:text="Forgot Password?"
-        android:textColor="@color/white" />
-
-    <TextView
-        android:id="@+id/signup"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/socialicons"
-        android:layout_marginStart="300dp"
-        android:layout_marginTop="22dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginBottom="30dp"
-        android:gravity="left"
-        android:text="Sign Up"
-        android:textColor="@color/teal_200"
-        android:textSize="17dp"
-        android:textStyle="bold" />
+        android:text="Continue" />
 
     <ProgressBar
         android:id="@+id/progessBar"
@@ -156,25 +134,5 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/socialicons"
-        android:layout_below="@id/others"
-        android:gravity="center">
-
-        <ImageView
-            android:layout_width="130dp"
-            android:layout_height="40dp"
-            android:src="@drawable/google"/>
-
-        <ImageView
-            android:layout_width="130dp"
-            android:layout_height="40dp"
-            android:src="@drawable/facebook" />
-
-    </LinearLayout>
 
 </RelativeLayout>
