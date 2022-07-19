@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         signup = (TextView) findViewById(R.id.signup);
         signup.setOnClickListener(this);
+
     }
 
     @Override
